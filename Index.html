@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Cloth Management</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-gray-200">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-200">Categories</a></li>
+                    <li><a href="#" class="hover:text-gray-200">Add Item</a></li>
+                    <li><a href="#" class="hover:text-gray-200">Orders</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Section -->
+    <main class="container mx-auto my-8 px-4">
+        <!-- Title Section -->
+        <section class="text-center mb-10">
+            <h2 class="text-4xl font-semibold text-blue-600">Cloth Inventory</h2>
+            <p class="text-gray-700 mt-4">Manage all your clothing items efficiently and effectively.</p>
+        </section>
+        <!-- Clothing Items Grid -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Item 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/300" alt="Cloth Item" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-800">T-Shirt</h3>
+                    <p class="text-gray-600 mt-2">Category: Casual Wear</p>
+                    <p class="text-gray-600 mt-2">Stock: 50</p>
+                    <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500">View Details</button>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/300" alt="Cloth Item" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Jeans</h3>
+                    <p class="text-gray-600 mt-2">Category: Denim</p>
+                    <p class="text-gray-600 mt-2">Stock: 30</p>
+                    <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500">View Details</button>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/300" alt="Cloth Item" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Jacket</h3>
+                    <p class="text-gray-600 mt-2">Category: Outerwear</p>
+                    <p class="text-gray-600 mt-2">Stock: 20</p>
+                    <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500">View Details</button>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/300" alt="Cloth Item" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Sweater</h3>
+                    <p class="text-gray-600 mt-2">Category: Winter Wear</p>
+                    <p class="text-gray-600 mt-2">Stock: 15</p>
+                    <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500">View Details</button>
+                </div>
+            </div>
+        </section>
+        <!-- Add Item Form Section -->
+        <section class="mt-12">
+            <h2 class="text-3xl font-semibold text-blue-600 mb-6">Add New Item</h2>
+            <form class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label for="item-name" class="block text-gray-700 font-medium">Item Name</label>
+                    <input type="text" id="item-name" class="mt-2 p-2 border border-gray-300 rounded w-full" placeholder="Enter item name">
+                </div>
+                <div class="mb-4">
+                    <label for="category" class="block text-gray-700 font-medium">Category</label>
+                    <select id="category" class="mt-2 p-2 border border-gray-300 rounded w-full">
+                        <option>Casual Wear</option>
+                        <option>Denim</option>
+                        <option>Outerwear</option>
+                        <option>Winter Wear</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="stock" class="block text-gray-700 font-medium">Stock</label>
+                    <input type="number" id="stock" class="mt-2 p-2 border border-gray-300 rounded w-full" placeholder="Enter stock quantity">
+                </div>
+                <button type="submit" class="mt-4 bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-500">Add Item</button>
+            </form>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="bg-blue-600 text-white py-4 mt-16">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Cloth Management System. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
